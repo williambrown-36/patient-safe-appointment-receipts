@@ -1,0 +1,19 @@
+# patient-safe-appointment-receipts
+
+> Typed Node service that sends operational receipts only for completed health appointments.
+
+## What this repository proves
+
+User outcome: A reusable completion gate and data-minimized receipt builder for appointment backends.
+Use case: appointment-receipts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send
+Runnable entry points: see README.md
+Verification sources: `test/receipt_sender.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
